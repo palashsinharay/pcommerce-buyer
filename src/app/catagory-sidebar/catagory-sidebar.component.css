@@ -1,0 +1,42 @@
+.subCat h2{
+	text-transform: uppercase;
+    letter-spacing: 0.9px;
+    font-size: 21px;
+    margin-bottom: 29px;
+}
+.subCat h2:after{
+	content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: .6rem;
+    background: rgba(241,108,73,0.8);
+}
+.subCat h3{
+	text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(241,108,73,0.8);
+}
+.subCat h3 span{
+	color: #fff;
+    background-color: #868e96;
+    letter-spacing: 0.1px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    float: right;
+    margin-top: -4px;
+}
+.subCat ul li a{
+	font-weight: 400;
+    color: #777;
+    padding: 6px 19px;
+    display: block;
+}
+.subCat ul li a.selected, .subCat ul li a:hover{
+	background: #eee;
+	text-decoration: none;
+}
+
+

@@ -1,0 +1,10 @@
+.topBar {
+    background: #555;
+    color: #fff;
+    padding: 10px 0;
+}
+.topBar p {
+    margin-bottom: 0;
+    color: #ddd;
+}
+.topBar a{color: #fff; font-weight: 700;}
