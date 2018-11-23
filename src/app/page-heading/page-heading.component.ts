@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'page-heading',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-heading.component.css']
 })
 export class PageHeadingComponent implements OnInit {
-
-  constructor() { }
+  title = 'dfsdfsdf';
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.title = this.route.snapshot.queryParamMap.get('heading');
+    console.log(this.route.snapshot.queryParamMap.get('heading'));
   }
 
 }
