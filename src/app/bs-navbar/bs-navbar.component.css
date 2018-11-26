@@ -3,8 +3,9 @@
     font-size: 24px;
     letter-spacing: 0.4px;
     color: rgba(241,108,73,1);
-    margin-top: 18px;
+    margin: 18px 0;
     display: inline-block;
+    /* float: left; */
 }
 .logo:hover{text-decoration: none;}
 /*.topmenu{
@@ -27,11 +28,12 @@
     font-size: 14px;
     border-top: 3px solid transparent;
 }*/
+/* .menu{float: right;} */
 .menu .container{width: auto;}
 .menu .navbar-nav {
     background: none;
     border: none;
-    text-align: right;
+    /* text-align: right; */
     margin-bottom: 0;
 }
 .menu .navbar-nav a{
@@ -43,7 +45,7 @@
     letter-spacing: 0.1px;
     font-size: 14px;
     border-top: 3px solid transparent;
-    display: inline-block;
+    display: block;
 }
 .menu .navbar-nav a:hover, .menu .navbar-nav .active a{
     background: rgba(241,108,73, 0.5);
@@ -51,8 +53,24 @@
     color: #fff;
     text-decoration: none;
 }
-.menu .navbar{text-align: right; padding: 0; float: right;}
+.menu .navbar{padding: 0; width: 100%;}
 .menu .navbar-collapse{padding-right: 0;}
 .menu .bg-light{background: none!important;}
+.menu .nav-item{display: inline-block;}
+.headerTop{
+    display: flex;
+    justify-content: space-between;    
+}
 
+@media screen and (max-width: 768px){
+    .headerTop{display: inherit;}
+    .menu{position: relative;}
+    .menu .navbar-toggler{
+        position: absolute;
+        top: -54px;
+        right: 0;
+    }
+    .nav-item{border-top: #ddd 1px solid;}
+    .navbar-nav{border-bottom: #ddd 1px solid;}
+}
 
