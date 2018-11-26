@@ -13,6 +13,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProductListPageComponent } from './product-list-page/product-list-page.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HomePageComponent,
     ProductListPageComponent,
     NotfoundPageComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ProductDetailPageComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
       },
       {
         path: 'product/:id',
-        component: ProductDetailsComponent
+        component: ProductDetailPageComponent
       },
       {
         path: 'product',
