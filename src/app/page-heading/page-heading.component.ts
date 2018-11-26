@@ -7,12 +7,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./page-heading.component.css']
 })
 export class PageHeadingComponent implements OnInit {
-  title = 'dfsdfsdf';
-  constructor(private route: ActivatedRoute) { }
+  public title: string;
+  constructor(private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
-    this.title = this.route.snapshot.queryParamMap.get('heading');
-    console.log(this.route.snapshot.queryParamMap.get('heading'));
+   this.title = 'Product';
   }
 
 }

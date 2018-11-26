@@ -32,13 +32,18 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     BrowserModule,
     RouterModule.forRoot([
       {
-        path: 'products',
-        component: ProductListPageComponent
-      },
-      {
         path: '',
         component: HomePageComponent
       },
+      {
+        path: 'product/:id',
+        component: ProductDetailsComponent
+      },
+      {
+        path: 'product',
+        component: ProductListPageComponent
+      }
+      ,
       {
         path: '**',
         component: NotfoundPageComponent
