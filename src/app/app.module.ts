@@ -3,7 +3,7 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { PageHeadingComponent } from './page-heading/page-heading.component';
 import { CatagorySidebarComponent } from './catagory-sidebar/catagory-sidebar.component';
@@ -19,7 +19,7 @@ import { ProductDetailPageComponent } from './product-detail-page/product-detail
 @NgModule({
   declarations: [
     AppComponent,
-    BsNavbarComponent,
+    NavbarComponent,
     HeaderComponent,
     PageHeadingComponent,
     CatagorySidebarComponent,

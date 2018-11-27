@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-detail-page.component.css']
 })
 export class ProductDetailPageComponent implements OnInit {
-
+  title;
   constructor() { }
 
   ngOnInit() {
+  this.title = 'Product detail';
   }
 
 }

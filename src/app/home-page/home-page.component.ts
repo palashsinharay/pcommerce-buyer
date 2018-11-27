@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   // let pageHeading:string="Home";
-
+  title;
   constructor() {
     // this.pageHeading = 'Home';
   }
 
   ngOnInit() {
+    this.title = 'home';
   }
 
 }

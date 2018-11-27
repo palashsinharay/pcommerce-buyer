@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  public product_id;
+  product_id;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {

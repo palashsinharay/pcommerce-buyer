@@ -23,5 +23,17 @@ ul{
     font-weight: 600;
     text-transform: uppercase;
 }
+.pageheading{
+    padding: 29px 0;
+    background: url(assets/images/texture-bw.png) repeat 0 0;
+}
+.pageheading h2{
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0;
+}
 
   
