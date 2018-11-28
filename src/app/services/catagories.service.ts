@@ -5,7 +5,7 @@ import { DataService } from './data.service';
 @Injectable({
   providedIn: 'root'
 })
-export class CatagoriesService extends DataService{
+export class CatagoriesService extends DataService {
   items = 10;
   page = 1;
 

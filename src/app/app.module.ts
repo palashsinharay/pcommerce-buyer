@@ -58,13 +58,9 @@ import { AppErrorHandler } from './common/app-error-handler';
       {
         path: 'product',
         component: ProductListPageComponent,
-        children:[
+        children: [
           {
-            path: '',
-            component: ProductListingComponent
-          },
-          {
-            path: 'watch',
+            path: ':category',
             component: ProductListingComponent
           }
         ]
