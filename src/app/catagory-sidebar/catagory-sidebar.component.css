@@ -1,3 +1,4 @@
+.subCat{margin-top: 19px;}
 .subCat h2{
 	text-transform: uppercase;
     letter-spacing: 0.9px;
@@ -38,5 +39,6 @@
 	background: #eee;
 	text-decoration: none;
 }
+
 
 

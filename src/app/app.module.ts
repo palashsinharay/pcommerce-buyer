@@ -14,6 +14,7 @@ import { ProductListPageComponent } from './product-list-page/product-list-page.
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
+import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ProductDetailPageComponent } from './product-detail-page/product-detail
     ProductListPageComponent,
     NotfoundPageComponent,
     ProductDetailsComponent,
-    ProductDetailPageComponent
+    ProductDetailPageComponent,
+    ProdImageGalComponent
   ],
   imports: [
     BrowserModule,
