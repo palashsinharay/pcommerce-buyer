@@ -2,7 +2,7 @@ import { ProductService } from './services/product.service';
 import { CatagoriesService } from './services/catagories.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component, ErrorHandler } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, ChildrenOutletContexts } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -52,12 +52,22 @@ import { AppErrorHandler } from './common/app-error-handler';
         component: HomePageComponent
       },
       {
-        path: 'product/:id',
+        path: 'product/details/:id',
         component: ProductDetailPageComponent
       },
       {
         path: 'product',
-        component: ProductListPageComponent
+        component: ProductListPageComponent,
+        children:[
+          {
+            path: '',
+            component: ProductListingComponent
+          },
+          {
+            path: 'watch',
+            component: ProductListingComponent
+          }
+        ]
       }
       ,
       {
