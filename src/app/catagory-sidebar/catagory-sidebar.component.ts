@@ -15,10 +15,15 @@ export class CatagorySidebarComponent implements OnInit {
   }
 
   ngOnInit() {
+<<<<<<< Updated upstream
     this.service.getCataories().subscribe( response => {
     this.catagories = response.body.dataitem;
+=======
+    this.service.getCataories(100, 1) .subscribe( response => {
+    this.catagories = response.json().body.dataitem;
+>>>>>>> Stashed changes
     this.isLoader = false;
-    // console.log(this.catagories);
+    console.log(this.catagories);
   });
   }
 

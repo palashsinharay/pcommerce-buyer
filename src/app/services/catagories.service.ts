@@ -14,6 +14,14 @@ export class CatagoriesService extends DataService{
   }
 
   getCataories(items?: number, page?: number) {
+
+    if (items != null) {
+      this.items = items;
+    }
+    if (page != null) {
+      this.page = page;
+    }
     return this.getAll(this.items + '/' + this.page);
+
   }
 }
