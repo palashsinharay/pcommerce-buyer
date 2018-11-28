@@ -1,4 +1,19 @@
-<li class="prodCont">
+<div [class.loader]="isLoader">
+<li *ngFor="let product of products" class="prodCont">
+    <a [routerLink]="['/product',45634232]">
+      <div class="productThumb">
+        <div class="prodImg">
+          <img src="../../assets/images/product1.jpg" />
+        </div>
+        <p>{{product.description}} : {{product.description}} </p>
+        <p class="price">Price : Rs 149 </p>
+      </div>
+      
+    </a>
+    <a [routerLink]="['/product',45634232]" class="buynowLink">Buy Now</a>
+</li>
+</div>
+<!-- <li class="prodCont">
     <a [routerLink]="['/product',45634232]">
       <div class="productThumb">
         <div class="prodImg">
@@ -9,7 +24,7 @@
       </div>
       
     </a>
-    <a href="/product/cart" class="buynowLink">Buy Now</a>
+    <a [routerLink]="['/product',45634232]" class="buynowLink">Buy Now</a>
 </li>
 <li class="prodCont">
     <a [routerLink]="['/product',45634232]">
@@ -22,18 +37,5 @@
       </div>
       
     </a>
-    <a href="/product/cart" class="buynowLink">Buy Now</a>
-</li>
-<li class="prodCont">
-    <a [routerLink]="['/product',45634232]">
-      <div class="productThumb">
-        <div class="prodImg">
-          <img src="../../assets/images/product1.jpg" />
-        </div>
-        <p>FUR COAT WITH VERY BUT VERY VERY LONG NAME </p>
-        <p class="price">Price : Rs 149 </p>
-      </div>
-      
-    </a>
-    <a href="/product/cart" class="buynowLink">Buy Now</a>
-</li>
+    <a [routerLink]="['/product',45634232]" class="buynowLink">Buy Now</a>
+</li> -->

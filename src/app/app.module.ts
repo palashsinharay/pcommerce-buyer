@@ -1,3 +1,5 @@
+import { ProductService } from './services/product.service';
+import { CatagoriesService } from './services/catagories.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -17,7 +19,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
 
-import { CatagoriesService } from './services/catagories.service';
+
 
 
 @NgModule({
@@ -45,6 +47,10 @@ import { CatagoriesService } from './services/catagories.service';
         component: HomePageComponent
       },
       {
+        path: 'home',
+        component: HomePageComponent
+      },
+      {
         path: 'product/:id',
         component: ProductDetailPageComponent
       },
@@ -60,7 +66,10 @@ import { CatagoriesService } from './services/catagories.service';
     ])
 
   ],
-  providers: [CatagoriesService],
+  providers: [
+    ProductService,
+    CatagoriesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
