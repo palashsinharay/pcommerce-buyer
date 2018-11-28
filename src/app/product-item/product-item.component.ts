@@ -13,11 +13,12 @@ export class ProductItemComponent implements OnInit {
   constructor(private service: ProductService) { }
 
   ngOnInit() {
-      this.service.getProducts().subscribe( response => {
-      this.products = response.body.dataitem;
-      this.isLoader = false;
-      // console.log(this.products);
-    }
-
+      this.service.getProducts()
+      .subscribe( response => {
+          this.products = response.body.dataitem;
+          this.isLoader = false;
+          // console.log(this.products);
+        }
+      );
   }
 }
