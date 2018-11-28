@@ -1,7 +1,7 @@
 import { ProductService } from './services/product.service';
 import { CatagoriesService } from './services/catagories.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, ErrorHandler } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
@@ -18,6 +18,7 @@ import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
+import { AppErrorHandler } from './common/app-error-handler';
 
 
 
@@ -68,7 +69,8 @@ import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component
   ],
   providers: [
     ProductService,
-    CatagoriesService
+    CatagoriesService,
+    {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]
 })

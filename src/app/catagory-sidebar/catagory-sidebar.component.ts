@@ -16,7 +16,7 @@ export class CatagorySidebarComponent implements OnInit {
 
   ngOnInit() {
     this.service.getCataories().subscribe( response => {
-    this.catagories = response.json().body.dataitem;
+    this.catagories = response.body.dataitem;
     this.isLoader = false;
     // console.log(this.catagories);
   });

@@ -14,9 +14,10 @@ export class ProductItemComponent implements OnInit {
 
   ngOnInit() {
       this.service.getProducts().subscribe( response => {
-      this.products = response.json().body.dataitem;
+      this.products = response.body.dataitem;
       this.isLoader = false;
       // console.log(this.products);
-  }
+    }
 
+  }
 }
