@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,6 +16,8 @@ import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
+
+import { CatagoriesService } from './services/catagories.service';
 
 
 @NgModule({
@@ -34,6 +37,7 @@ import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component
     ProdImageGalComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     RouterModule.forRoot([
       {
@@ -56,7 +60,7 @@ import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component
     ])
 
   ],
-  providers: [],
+  providers: [CatagoriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

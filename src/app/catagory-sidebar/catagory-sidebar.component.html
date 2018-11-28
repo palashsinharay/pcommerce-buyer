@@ -1,27 +1,14 @@
-<div class="subCat">
+<div class="subCat loader" [class.loader]="isLoader">
     <h2>Categories</h2>
     <span class="bdrbt"></span>
-    <h3>Men <span>42</span></h3>
-    <ul>
-  <li><a href="/product/listing" class="selected">T-shirts</a></li>
-  <li><a href="/product/listing">T-shirts</a></li>
-  <li><a href="/product/listing">T-shirts</a></li>
-  <li><a href="/product/listing">T-shirts</a></li>
-</ul>
-
-<h3>ladies <span>59</span></h3>
-<ul>
-  <li><a href="/product/listing">Pant</a></li>
-  <li><a href="/product/listing">Pant</a></li>
-  <li><a href="/product/listing">Pant</a></li>
-  <li><a href="/product/listing">Pant</a></li>
-</ul>
-
-<h3>Kids <span>61</span></h3>
-<ul>
-  <li><a href="/product/listing">T-shirts</a></li>
-  <li><a href="/product/listing">T-shirts</a></li>
-  <li><a href="/product/listing">T-shirts</a></li>
-  <li><a href="/product/listing">T-shirts</a></li>
-</ul>
+<!-- Repeat block start -->
+<div *ngFor="let catagory of catagories">
+  <h3>{{catagory.name}} <span></span></h3>
+  <!-- <ul>
+    Repeat list start
+    <li><a href="/product/listing" class="selected">T-shirts</a></li>
+    Repeat list end
+  </ul> -->
+</div>
+<!-- Repeat block end -->
 </div>
