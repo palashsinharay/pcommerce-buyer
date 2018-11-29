@@ -26,9 +26,9 @@ export class ProductDetailPageComponent implements OnInit {
       this.service.getProductDetails(this.catagory_id, this.product_id)
       .subscribe( response => {
           this.product_details = response.body;
-          this.product_other_details = JSON.parse(this.product_details.product_other_details);
+          // this.product_other_details = JSON.parse(this.product_details.product_other_details);
           this.isLoader = false;
-          console.log(this.product_other_details);
+          console.log(this.product_details);
         }
       );
     });
