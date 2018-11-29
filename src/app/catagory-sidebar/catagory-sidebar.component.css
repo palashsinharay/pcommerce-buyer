@@ -21,7 +21,20 @@
     color: rgba(241,108,73,0.8);
     border-bottom: #ddd 1px solid;
     margin: 0;
-    padding: 9px 0;
+    padding: 9px;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.subCat h3:hover{
+    background: #eee;
+    color: #333;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .subCat h3 span{
 	color: #fff;
