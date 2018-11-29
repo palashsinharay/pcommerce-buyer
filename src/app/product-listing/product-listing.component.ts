@@ -17,8 +17,18 @@ export class ProductListingComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.service.getProducts(this.cat_id)
+      .subscribe( response => {
+          this.products = response.body.dataitem;
+          this.isLoader = false;
+          // console.log(this.products);
+        }
+      );
+
+
     this.route.paramMap.subscribe(params => {
       this.cat_id = +params.get('cat_id');
+      this.isLoader = true;
       this.service.getProducts(this.cat_id)
       .subscribe( response => {
           this.products = response.body.dataitem;
@@ -27,9 +37,6 @@ export class ProductListingComponent implements OnInit {
         }
       );
     });
-
-
-      
   }
 
 }
