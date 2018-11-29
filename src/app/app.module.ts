@@ -11,7 +11,6 @@ import { HeaderComponent } from './header/header.component';
 import { PageHeadingComponent } from './page-heading/page-heading.component';
 import { CatagorySidebarComponent } from './catagory-sidebar/catagory-sidebar.component';
 import { ProductListingComponent } from './product-listing/product-listing.component';
-import { ProductItemComponent } from './product-item/product-item.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductListPageComponent } from './product-list-page/product-list-page.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
@@ -31,7 +30,6 @@ import { AppErrorHandler } from './common/app-error-handler';
     PageHeadingComponent,
     CatagorySidebarComponent,
     ProductListingComponent,
-    ProductItemComponent,
     HomePageComponent,
     ProductListPageComponent,
     NotfoundPageComponent,
@@ -48,10 +46,6 @@ import { AppErrorHandler } from './common/app-error-handler';
         component: HomePageComponent
       },
       {
-        path: 'home',
-        component: HomePageComponent
-      },
-      {
         path: 'product/details/:id',
         component: ProductDetailPageComponent
       },
@@ -60,7 +54,7 @@ import { AppErrorHandler } from './common/app-error-handler';
         component: ProductListPageComponent,
         children: [
           {
-            path: ':category',
+            path: 'category/:cat_id',
             component: ProductListingComponent
           }
         ]

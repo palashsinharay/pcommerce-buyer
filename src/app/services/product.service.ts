@@ -11,7 +11,7 @@ export class ProductService extends DataService {
   category_id = 7;
 
   constructor(http: Http) {
-    super('http://142.93.57.132:8002/api/v1/categories',http);
+    super('http://142.93.57.132:8002/api/v1/categories', http);
   }
 
   getProducts(category_id?: number, items?: number, page?: number) {

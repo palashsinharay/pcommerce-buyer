@@ -2,7 +2,21 @@
     <p>In our Ladies department we offer wide selection of the best products we have found and carefully selected worldwide. Pellentesque habitant morbi tristique senectus et netuss. </p>
     <ul>
       <!-- <ProductThumb data={imageUrl} desc={prodDesc} price={prodPrice}/> -->
-      <product-item></product-item>
+      <div [class.loader]="isLoader">
+          <li *ngFor="let product of products" class="prodCont">
+              <a [routerLink]="['/product/details',45634232]">
+                <div class="productThumb">
+                  <div class="prodImg">
+                    <img src="../../assets/images/product1.jpg" />
+                  </div>
+                  <p>{{product.description}} : {{product.description}} </p>
+                  <p class="price">Price : Rs 149 </p>
+                </div>
+                
+              </a>
+              <a [routerLink]="['/product/details',45634232]" class="buynowLink">Buy Now</a>
+          </li>
+      </div>
     </ul>
     <div class="clearfix"></div>
   </div>
