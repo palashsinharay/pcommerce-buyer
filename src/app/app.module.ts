@@ -17,8 +17,8 @@ import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
 import { AppErrorHandler } from './common/app-error-handler';
-
-
+import { StoreModule } from '@ngrx/store'; 
+import { reducers } from './store/root.reducer';
 
 
 @NgModule({
@@ -38,6 +38,7 @@ import { AppErrorHandler } from './common/app-error-handler';
   imports: [
     HttpModule,
     BrowserModule,
+    StoreModule.forRoot(reducers),
     RouterModule.forRoot([
       {
         path: '',
