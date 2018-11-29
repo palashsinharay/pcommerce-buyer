@@ -8,12 +8,12 @@
     <div class="col-md-5"><prod-image-gal></prod-image-gal></div>
     <div class="col-md-7" [class.loader]="isLoader">
       <div class="prodDetails" *ngIf="product_details!=null">
-        <p class="head">Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain me be. So landlord by we unlocked sensible it. Fat cannot use denied excuse son law. Wisdom happen suffer common the appear ham beauty her had. Or belonging zealously existence as by resources.</p>
+        <p class="head">{{product_details.description}}</p>
+      
+        <h2>Product</h2>
+        <p>{{product_details.name}}</p>
       
         <h2>Product details </h2>
-        <p>{{product_details.description}}</p>
-      
-        <h2>Material & care </h2>
         <ul>
           <li *ngFor="let item of product_other_details">
             {{item.label}}: {{item.value}}
@@ -21,7 +21,7 @@
           
         </ul>
       
-        <h2>Size & Fit </h2>
+        <h2>Variant </h2>
         <ul>
           <li>Regular fit </li>
           <li>The model (height 5'8" and chest 33") is wearing a size S </li>
