@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CatagoriesService } from './../services/catagories.service';
 
 @Component({
   selector: 'app-home-page',
@@ -6,14 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  // let pageHeading:string="Home";
   title;
-  constructor() {
-    // this.pageHeading = 'Home';
+  isLoader = true;
+  catagories: any[];
+  constructor(private service: CatagoriesService) {
   }
 
   ngOnInit() {
     this.title = 'home';
-  }
+    this.service.getCataories(100, 1).subscribe( response => {
+    this.catagories = response.body.dataitem;
 
+    this.isLoader = false;
+    console.log(this.catagories);
+
+  });
+}
 }

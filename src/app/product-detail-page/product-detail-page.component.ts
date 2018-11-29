@@ -1,3 +1,5 @@
+import { ProductdetailsService } from './../services/productdetails.service';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,10 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailPageComponent implements OnInit {
   title;
-  constructor() { }
+  catagory_id;
+  product_id;
+  product_details: any[];
+  isLoader = true;
+  constructor(private route: ActivatedRoute, private service: ProductdetailsService) { }
 
   ngOnInit() {
-  this.title = 'Product detail';
+    this.title = 'Product detail';
+    this.route.paramMap.subscribe(params => {
+      this.catagory_id = +params.get('cat_id');
+      this.product_id = +params.get('p_id');
+      this.isLoader = true;
+      this.service.getProductDetails(this.catagory_id, this.product_id)
+      .subscribe( response => {
+          this.product_details = response.body;
+          this.isLoader = false;
+          console.log(this.product_details);
+        }
+      );
+    });
   }
 
 }

@@ -3,7 +3,7 @@
     <ul [class.loader]="isLoader">
       <!-- <ProductThumb data={imageUrl} desc={prodDesc} price={prodPrice}/> -->
           <li *ngFor="let product of products" class="prodCont">
-              <a [routerLink]="['/product/details',45634232]">
+              <a [routerLink]="['/product/details',this.cat_id,product.id]">
                 <div class="productThumb">
                   <div class="prodImg">
                     <img src="../../assets/images/product1.jpg" />
@@ -13,7 +13,7 @@
                 </div>
                 
               </a>
-              <a [routerLink]="['/product/details',45634232]" class="buynowLink">Buy Now</a>
+              <a [routerLink]="['/product/details',this.cat_id,product.id]" class="buynowLink">Buy Now</a>
           </li>
     </ul>
     <div class="clearfix"></div>

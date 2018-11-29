@@ -46,7 +46,7 @@ import { AppErrorHandler } from './common/app-error-handler';
         component: HomePageComponent
       },
       {
-        path: 'product/details/:id',
+        path: 'product/details/:cat_id/:p_id',
         component: ProductDetailPageComponent
       },
       {
