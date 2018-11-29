@@ -14,7 +14,6 @@ import { ProductListingComponent } from './product-listing/product-listing.compo
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductListPageComponent } from './product-list-page/product-list-page.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
 import { AppErrorHandler } from './common/app-error-handler';
@@ -33,7 +32,6 @@ import { AppErrorHandler } from './common/app-error-handler';
     HomePageComponent,
     ProductListPageComponent,
     NotfoundPageComponent,
-    ProductDetailsComponent,
     ProductDetailPageComponent,
     ProdImageGalComponent
   ],

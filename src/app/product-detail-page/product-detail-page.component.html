@@ -6,17 +6,19 @@
 <div class="container">
   <div class="row">
     <div class="col-md-5"><prod-image-gal></prod-image-gal></div>
-    <div class="col-md-7">
-      <div class="prodDetails">
+    <div class="col-md-7" [class.loader]="isLoader">
+      <div class="prodDetails" *ngIf="product_details!=null">
         <p class="head">Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain me be. So landlord by we unlocked sensible it. Fat cannot use denied excuse son law. Wisdom happen suffer common the appear ham beauty her had. Or belonging zealously existence as by resources.</p>
       
         <h2>Product details </h2>
-        <!-- <p>{{this.product_details.description}}</p> -->
+        <p>{{product_details.description}}</p>
       
         <h2>Material & care </h2>
         <ul>
-          <li>Polyester {{this.product_id}}</li>
-          <li>Machine wash {{this.catagory_id}} </li>
+          <li *ngFor="let item of product_other_details">
+            Polyester {{product_id}}
+          </li>
+          
         </ul>
       
         <h2>Size & Fit </h2>
