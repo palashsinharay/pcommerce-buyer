@@ -14,6 +14,7 @@ export class ProductDetailPageComponent implements OnInit {
   product_id;
   product_details: any[];
   product_other_details: any[];
+  allVariants: any[];
   isLoader = true;
   constructor(private route: ActivatedRoute, private service: ProductdetailsService) { }
 
@@ -27,11 +28,16 @@ export class ProductDetailPageComponent implements OnInit {
       .subscribe( response => {
           this.product_details = response.body;
           let allOtherDetails = JSON.parse(this.product_details['product_other_details']);
-          this.product_other_details = Object.keys(allOtherDetails).map((key)=>{
+          this.product_other_details = Object.keys(allOtherDetails).map((key) => {
             return { label: key , value: allOtherDetails[key] };
+          });
+          let variantObj = JSON.parse(this.product_details['variant']);
+          this.allVariants = Object.keys(variantObj).map((key) => {
+            return { label: key , value: variantObj[key] };
           });
           this.isLoader = false;
           console.log(this.product_other_details);
+          console.log(this.allVariants);
         }
       );
     });

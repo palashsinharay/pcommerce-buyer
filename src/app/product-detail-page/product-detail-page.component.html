@@ -15,18 +15,22 @@
       
         <h2>Product details </h2>
         <ul>
-          <li *ngFor="let item of product_other_details">
-            {{item.label}}: {{item.value}}
+          <li *ngFor="let spec of product_other_details">
+            {{spec.label}}: {{spec.value}}
           </li>
           
         </ul>
       
         <h2>Variant </h2>
-        <ul>
-          <li>Regular fit </li>
-          <li>The model (height 5'8" and chest 33") is wearing a size S </li>
+        <ul *ngFor="let variant of allVariants">
+          <li>{{variant.label}} 
+            <ul>
+                <li *ngFor="let item of variant.value">{{item | json}}</li>
+            </ul>
+          </li>
         </ul>
-        <p>Define style this season with Armani's new range of trendy tops, crafted with intricate details. Create a chic statement look by teaming this lace number with skinny jeans and pumps. </p>
+        
+        <p>{{product_details.description}}</p>
       </div>
     </div>
   </div>
