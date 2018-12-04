@@ -19,6 +19,7 @@ import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component
 import { AppErrorHandler } from './common/app-error-handler';
 import { StoreModule } from '@ngrx/store'; 
 import { reducers } from './store/root.reducer';
+import { OtherSellerComponent } from './other-seller/other-seller.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { reducers } from './store/root.reducer';
     ProductListPageComponent,
     NotfoundPageComponent,
     ProductDetailPageComponent,
-    ProdImageGalComponent
+    ProdImageGalComponent,
+    OtherSellerComponent
   ],
   imports: [
     HttpModule,

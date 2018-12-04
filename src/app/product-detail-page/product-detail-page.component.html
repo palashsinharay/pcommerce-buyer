@@ -7,30 +7,37 @@
   <div class="row">
     <div class="col-md-5"><prod-image-gal></prod-image-gal></div>
     <div class="col-md-7" [class.loader]="isLoader">
-      <div class="prodDetails" *ngIf="product_details!=null">
-        <p class="head">{{product_details.description}}</p>
-      
-        <h2>Product</h2>
-        <p>{{product_details.name}}</p>
-      
-        <h2>Product details </h2>
-        <ul>
-          <li *ngFor="let spec of product_other_details">
-            {{spec.label}}: {{spec.value}}
-          </li>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="prodDetails" *ngIf="product_details!=null">
+            <p class="head">{{product_details.description}}</p>
           
-        </ul>
-      
-        <h2>Variant </h2>
-        <ul *ngFor="let variant of allVariants">
-          <li>{{variant.label}} 
+            <h2>Product</h2>
+            <p>{{product_details.name}}</p>
+          
+            <h2>Product details </h2>
             <ul>
-                <li *ngFor="let item of variant.value">{{item | json}}</li>
+              <li *ngFor="let spec of product_other_details">
+                {{spec.label}}: {{spec.value}}
+              </li>
+              
             </ul>
-          </li>
-        </ul>
-        
-        <p>{{product_details.description}}</p>
+          
+            <h2>Variant </h2>
+            <ul *ngFor="let variant of allVariants">
+              <li>{{variant.label}} 
+                <ul>
+                    <li *ngFor="let item of variant.value">{{item | json}}</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <p>{{product_details.description}}</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <other-seller></other-seller>
+        </div>
       </div>
     </div>
   </div>

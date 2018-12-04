@@ -1,0 +1,77 @@
+.addProduct, .otherSeller{
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 19px;
+}
+.addProduct label{
+    display: inline-block;
+    margin-right: 9px;
+    font-size: 14px;
+}
+.addProduct input[type="number"]{
+    display: inline-block;
+    width: 40px;
+    padding: 0 0 0 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: #ddd 1px solid;
+}
+.addProduct a{
+    display: block;
+    background: #F16C49;
+    color: #fff;
+    padding: 4px 6px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 9px;
+    text-align: center;
+}
+.addProduct a:hover{
+    text-decoration: none;
+}
+.addProduct span{
+    font-size: 11px;
+    margin-left: 6px;
+}
+.addProduct h2, .otherSeller h2{
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 9px;
+    border-bottom: #ddd 1px solid;
+    padding-bottom: 9px;
+}
+.otherSeller h3{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    color: #F16C49;
+}
+.otherSeller p{
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+}
+.otherSeller li{
+    border-bottom: #ccc 1px solid;
+    padding: 18px 0;
+}
+.otherSeller li:nth-last-child(1){
+    border-bottom: none;
+    padding: 18px 0 0;
+}
+.otherSeller li a{color: #000;}
+.otherSeller li a:hover{text-decoration: none;}
+.sellerPrice{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.sellerPrice a{
+    background: #F16C49;
+    color: #fff!important;
+    padding: 4px 6px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+}
