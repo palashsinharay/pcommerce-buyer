@@ -1,3 +1,4 @@
+<navbar></navbar>
 <div class="pageheading">
   <div class="container"> 
     <h2>{{title}}</h2>
@@ -18,7 +19,7 @@
             <h2>Product details </h2>
             <ul>
               <li *ngFor="let spec of product_other_details">
-                {{spec.label}}: {{spec.value}}
+                {{spec.name}}: {{spec.value}}
               </li>
               
             </ul>
@@ -27,7 +28,7 @@
             <ul *ngFor="let variant of allVariants">
               <li>{{variant.label}} 
                 <ul>
-                    <li *ngFor="let item of variant.value">{{item | json}}</li>
+                    <li *ngFor="let item of variant.value">{{item.name}}</li>
                 </ul>
               </li>
             </ul>

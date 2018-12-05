@@ -44,12 +44,12 @@ import { LoginPageComponent } from './login-page/login-page.component';
     BrowserModule,
     StoreModule.forRoot(reducers),
     RouterModule.forRoot([
-      // {
-      //   path: '',
-      //   component: HomePageComponent
-      // },
       {
         path: '',
+        component: HomePageComponent
+      },
+      {
+        path: 'admin',
         component: LoginPageComponent
       },
       {
