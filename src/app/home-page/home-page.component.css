@@ -57,3 +57,55 @@
     background: #ddd;
     padding: 36px 0;
 }
+.prodImg{
+	height: 200px;
+	overflow: hidden;
+}
+.prodImg img{
+	width: 100%;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.prodCont a{
+	border-bottom: 1px solid #ddd;
+	display: block;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.prodCont a:hover{
+	text-decoration: none;
+	border-color: #4fbfa8;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.prodCont a:focus{text-decoration: none;}
+.prodCont .prodImg:hover img{
+	width: 110%;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.buynowLink{
+	background: #4fbfa8;
+    color: #fff!important;
+	border-radius: 0;
+	border-color: #4fbfa8 1px solid;
+    text-decoration: none;
+    margin-bottom: 19px;
+    padding: 6px 12px;
+    font-weight: 600;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: inline-block!important;
+}
+.buynowLink:hover{
+	border-color: #4fbfa8;
+	color: #fff;
+}
