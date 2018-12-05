@@ -19,11 +19,8 @@ import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component
 import { AppErrorHandler } from './common/app-error-handler';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './store/root.reducer';
-<<<<<<< c153ac13979097ae822fbf7a756c022a2f6f9920
 import { OtherSellerComponent } from './other-seller/other-seller.component';
-=======
 import { LoginPageComponent } from './login-page/login-page.component';
->>>>>>> login component created
 
 
 @NgModule({
@@ -39,11 +36,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
     NotfoundPageComponent,
     ProductDetailPageComponent,
     ProdImageGalComponent,
-<<<<<<< c153ac13979097ae822fbf7a756c022a2f6f9920
-    OtherSellerComponent
-=======
+    OtherSellerComponent,
     LoginPageComponent
->>>>>>> login component created
   ],
   imports: [
     HttpModule,
