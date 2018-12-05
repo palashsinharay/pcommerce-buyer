@@ -1,0 +1,41 @@
+.login{
+	color: #555;
+}
+.login h2{
+	font-size: 26px;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.login h3{
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 0.2px;
+	margin-bottom: 39px;
+}
+.login p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 19px;
+}
+.login label{
+	font-size: 16px;
+	font-weight: normal;
+}
+.login input{
+	width: 100%;
+	border: #ced4da 1px solid;
+	padding: 9px;
+	color: #495057;
+	margin-bottom: 19px;
+}
+.login input:focus{
+	border: 1px solid #4fbfa8;
+	outline: none;
+}
+.login form{
+	border-top: #ced4da 1px solid;
+	padding-top: 19px;
+}
+
+
