@@ -2,8 +2,8 @@
 	color: #555;
 	width: 40%;
 	margin: 0 auto;
-	background: #fff;
-	border: #ccc 3px solid;
+	background: #eeefff;
+	border: #dddeee 3px solid;
 	border-radius: 15px;
 	padding: 30px;
 }
@@ -44,8 +44,12 @@
 	padding-top: 19px;
 }
 .loginOuter{
-	background: #eee;
-	padding: 30px 0;
+	padding: 60px 0 30px;
+}
+.login .buttonGreen{
+	background: #4fbfa8; 
+	color: #fff; 
+	font-weight: 600;
 }
 
 
