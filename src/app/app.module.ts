@@ -1,3 +1,4 @@
+import { EventEmiterService } from './services/event-emiter.service';
 import { ProductService } from './services/product.service';
 import { CatagoriesService } from './services/catagories.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -77,6 +78,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
   providers: [
     ProductService,
     CatagoriesService,
+    EventEmiterService,
     {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]

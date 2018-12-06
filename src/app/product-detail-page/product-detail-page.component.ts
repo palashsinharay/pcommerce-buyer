@@ -1,3 +1,4 @@
+import { EventEmiterService } from './../services/event-emiter.service';
 import { ProductdetailsService } from './../services/productdetails.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
@@ -18,7 +19,11 @@ export class ProductDetailPageComponent implements OnInit {
   product_other_details: any[];
   allVariants: any[];
   isLoader = true;
-  constructor(private route: ActivatedRoute, private service: ProductdetailsService, private offerService: OffersService) { }
+  constructor(private route: ActivatedRoute,
+    private service: ProductdetailsService,
+    private offerService: OffersService,
+    private _eventEmiter: EventEmiterService
+    ) { }
 
   ngOnInit() {
     this.title = 'Product detail';
@@ -30,20 +35,20 @@ export class ProductDetailPageComponent implements OnInit {
       .subscribe( response => {
           this.product_details = response.body;
           this.product_other_details = this.product_details['product_other_details'];
-
+          this._eventEmiter.sendMessage(this.product_details['image']);
           const variantObj = this.product_details['variant'];
           this.allVariants = Object.keys(variantObj).map((key) => {
             return { label: key , value: variantObj[key] };
           });
-          this.offerService.getOffers(this.product_details.cat_id, this.product_details.id).subscribe(
+          this.offerService.getOffers(this.product_details['cat_id'], this.product_details['id']).subscribe(
             response => {
-            this.offer_details = response.body;
-            alert(this.offer_details);
+            this.offer_details = response.body.dataitem;
+            console.log(this.offer_details);
             }
           );
 
           this.isLoader = false;
-          // console.log(this.product_other_details);
+          console.log(this.product_details);
           // console.log(this.allVariants);
         }
       );

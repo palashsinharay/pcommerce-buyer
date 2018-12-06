@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventEmiterService } from '../services/event-emiter.service';
 
 @Component({
   selector: 'prod-image-gal',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prod-image-gal.component.css']
 })
 export class ProdImageGalComponent implements OnInit {
-
-  constructor() { }
+  images;
+  constructor(private _eventEmiter: EventEmiterService) { }
 
   ngOnInit() {
+    this._eventEmiter.dataStr.subscribe(data => {
+      console.log(data);
+      this.images = data;
+   });
   }
+
 
 }

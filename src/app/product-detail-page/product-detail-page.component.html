@@ -12,7 +12,9 @@
         <div class="col-md-7">
           <div class="prodDetails" *ngIf="product_details!=null">
             <p class="head">{{product_details.description}}</p>
-            <p class="price">$400 </p>
+            <p class="price" *ngFor="let offer of offer_details"><span>{{offer.price | currency: 'INR':true}}</span> 
+            </p>
+            
             <h2>Product</h2>
             <p>{{product_details.name}}</p>
           
