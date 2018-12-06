@@ -8,7 +8,7 @@ import { DataService } from './data.service';
 export class ProductService extends DataService {
   items = 10;
   page = 1;
-  category_id = 7;
+  category_id = 1;
 
   constructor(http: Http) {
     super('http://142.93.57.132:8002/api/v1/categories', http);

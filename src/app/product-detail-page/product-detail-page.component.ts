@@ -1,6 +1,7 @@
 import { ProductdetailsService } from './../services/productdetails.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { OffersService } from '../services/offers.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -13,10 +14,11 @@ export class ProductDetailPageComponent implements OnInit {
   catagory_id;
   product_id;
   product_details: any[];
+  offer_details: any[];
   product_other_details: any[];
   allVariants: any[];
   isLoader = true;
-  constructor(private route: ActivatedRoute, private service: ProductdetailsService) { }
+  constructor(private route: ActivatedRoute, private service: ProductdetailsService, private offerService: OffersService) { }
 
   ngOnInit() {
     this.title = 'Product detail';
@@ -27,19 +29,22 @@ export class ProductDetailPageComponent implements OnInit {
       this.service.getProductDetails(this.catagory_id, this.product_id)
       .subscribe( response => {
           this.product_details = response.body;
-          // const allOtherDetails = JSON.parse(this.product_details['product_other_details']);
-          // this.product_other_details = Object.keys(allOtherDetails).map((key) => {
-          //   return { label: key , value: allOtherDetails[key] };
-          // });
-
           this.product_other_details = this.product_details['product_other_details'];
+
           const variantObj = this.product_details['variant'];
           this.allVariants = Object.keys(variantObj).map((key) => {
             return { label: key , value: variantObj[key] };
           });
+          this.offerService.getOffers(this.product_details.cat_id, this.product_details.id).subscribe(
+            response => {
+            this.offer_details = response.body;
+            alert(this.offer_details);
+            }
+          );
+
           this.isLoader = false;
-          console.log(this.product_other_details);
-          console.log(this.allVariants);
+          // console.log(this.product_other_details);
+          // console.log(this.allVariants);
         }
       );
     });

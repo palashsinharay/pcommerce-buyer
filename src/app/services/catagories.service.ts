@@ -10,7 +10,7 @@ export class CatagoriesService extends DataService {
   page = 1;
 
   constructor(http: Http ) {
-    super('http://142.93.57.132:8002/api/v1/categories',http);
+    super('http://142.93.57.132:8002/api/v1/categories', http);
   }
 
   getCataories(items?: number, page?: number) {

@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListingComponent implements OnInit {
 
-  private cat_id = 7;
+  private cat_id = 1;
   isLoader = true;
   products: any[];
   constructor(private service: ProductService, private route: ActivatedRoute ) {
