@@ -21,11 +21,25 @@
 }
 .prodDetails ul{
 	margin-bottom: 19px;
-    list-style-type: disc;
-    margin-left: 19px;
+    /* list-style-type: disc; */
+    /* margin-left: 19px; */
 }
 .prodDetails ul li{
-	font-size: 16px;
+    font-size: 16px;
+}
+.prodDetails ul ul{
+    margin-top: 9px;
+}
+.prodDetails ul li li{
+    font-style: italic;
+    font-size: 14px;
+    color: #F16C49;
+}
+.prodDetails ul ul li::before{
+    content: '\f0da';
+    font-family: FontAwesome;
+    padding-right: 6px;
+    font-size: 10px;
 }
 
 
