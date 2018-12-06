@@ -1,19 +1,23 @@
 .prodDetails{padding: 19px 0;}
 .prodDetails p.head{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 24px;
-    color: #6c757d;
-    margin-bottom: 19px;
+    margin-bottom: 0;
 }
 .prodDetails h2{
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 700;
 	margin: 0 0 9px;
 }
 .prodDetails p{
 	font-size: 16px;
 	margin-bottom: 19px;
+}
+.prodDetails p.price{
+    font-weight: 600; 
+    color: #F16C49;
+    font-size: 24px;
 }
 .prodDetails ul{
 	margin-bottom: 19px;
