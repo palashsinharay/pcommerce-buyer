@@ -1,0 +1,111 @@
+.pageheading{
+    padding: 29px 0;
+    background: url(../../assets/images/texture-bw.png) repeat 0 0;
+}
+.pageheading h2{
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0;
+}
+/* .serviceIcon{
+    color: #6aae7a;
+    border: 1px solid #6aae7a;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+} */
+
+.serviceIcon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(241,108,73, 0.8);
+    margin-bottom: 20px;
+}
+.serviceSection{
+    text-align: center;
+}
+.serviceSection h3{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+}
+.serviceSection p{
+    color: #999;
+    margin: 9px 0 27px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.serviceSection{
+    margin: 36px 0;
+}
+.serviceSection hr{margin: 21px 0;}
+.footer{
+    background: #555;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 10px;
+    text-align: center;
+}
+.whoWeAre{
+    background: #ddd;
+    padding: 36px 0;
+}
+.prodImg{
+	height: 200px;
+	overflow: hidden;
+}
+.prodImg img{
+	width: 100%;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.prodCont a{
+	border-bottom: 1px solid #ddd;
+	display: block;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.prodCont a:hover{
+	text-decoration: none;
+	border-color: #4fbfa8;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.prodCont a:focus{text-decoration: none;}
+.prodCont .prodImg:hover img{
+	width: 110%;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+.buynowLink{
+	background: #4fbfa8;
+    color: #fff!important;
+	border-radius: 0;
+	border-color: #4fbfa8 1px solid;
+    text-decoration: none;
+    margin-bottom: 19px;
+    padding: 6px 12px;
+    font-weight: 600;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: inline-block!important;
+}
+.buynowLink:hover{
+	border-color: #4fbfa8;
+	color: #fff;
+}

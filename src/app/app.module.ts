@@ -22,6 +22,8 @@ import { StoreModule } from '@ngrx/store';
 import { reducers } from './store/root.reducer';
 import { OtherSellerComponent } from './other-seller/other-seller.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { FeaturedProductComponent } from './featured-product/featured-product.component';
+import { FeaturedProductService } from './services/featured-product.service';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
     ProductDetailPageComponent,
     ProdImageGalComponent,
     OtherSellerComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    FeaturedProductComponent
   ],
   imports: [
     HttpModule,
@@ -79,6 +82,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
     ProductService,
     CatagoriesService,
     EventEmiterService,
+    FeaturedProductService,
     {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]

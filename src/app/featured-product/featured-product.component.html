@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="serviceSection loader" [class.loader]="isLoader">
+    <h2>Our Feature Products</h2>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. </p>
+    <hr>
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let product of products"> 
+        <div class="prodCont">
+          <a [routerLink]="['product/details/',product.cid,product.pid]">
+            <div class="productThumb">
+              <div class="prodImg">
+                <img src="data:{{product.image[0][0].fileMimeType}};base64,{{product.image[0][0].filecoded_string}}">
+              </div>
+              <p>{{product.name}}</p>
+              <p>{{product.price| currency : 'INR'}}</p>
+            </div>
+          </a>
+          <a class="buynowLink">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
