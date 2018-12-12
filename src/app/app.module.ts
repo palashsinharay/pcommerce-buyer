@@ -24,6 +24,9 @@ import { OtherSellerComponent } from './other-seller/other-seller.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { FeaturedProductComponent } from './featured-product/featured-product.component';
 import { FeaturedProductService } from './services/featured-product.service';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { FeaturedProductService } from './services/featured-product.service';
     ProdImageGalComponent,
     OtherSellerComponent,
     LoginPageComponent,
-    FeaturedProductComponent
+    FeaturedProductComponent,
+    CartPageComponent,
+    CartlistComponent,
+    OrderSummaryComponent
   ],
   imports: [
     HttpModule,
@@ -57,6 +63,10 @@ import { FeaturedProductService } from './services/featured-product.service';
         component: LoginPageComponent
       },
       {
+        path : 'cart',
+        component : CartPageComponent
+      },
+      {
         path: 'product/details/:cat_id/:p_id',
         component: ProductDetailPageComponent
       },
@@ -69,8 +79,7 @@ import { FeaturedProductService } from './services/featured-product.service';
             component: ProductListingComponent
           }
         ]
-      }
-      ,
+      },
       {
         path: '**',
         component: NotfoundPageComponent
