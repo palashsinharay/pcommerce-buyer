@@ -27,6 +27,10 @@ import { FeaturedProductService } from './services/featured-product.service';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CartlistComponent } from './cartlist/cartlist.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CheckoutAddressComponent } from './checkout-address/checkout-address.component';
+import { CheckoutPaymentComponent } from './checkout-payment/checkout-payment.component';
+import { CheckoutOverviewComponent } from './checkout-overview/checkout-overview.component';
 
 
 @NgModule({
@@ -47,7 +51,11 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     FeaturedProductComponent,
     CartPageComponent,
     CartlistComponent,
-    OrderSummaryComponent
+    OrderSummaryComponent,
+    CheckoutComponent,
+    CheckoutAddressComponent,
+    CheckoutPaymentComponent,
+    CheckoutOverviewComponent
   ],
   imports: [
     HttpModule,
@@ -65,6 +73,24 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
       {
         path : 'cart',
         component : CartPageComponent
+      },
+      {
+        path : 'checkout',
+        component : CheckoutComponent,
+        children: [
+          {
+            path : 'address',
+            component : CheckoutAddressComponent
+          },
+          {
+            path : 'payment',
+            component : CheckoutPaymentComponent
+          },
+          {
+            path : 'overview',
+            component : CheckoutOverviewComponent
+          }
+        ]
       },
       {
         path: 'product/details/:cat_id/:p_id',

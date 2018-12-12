@@ -10,7 +10,7 @@ export class CartPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.title = 'Cart';
+    this.title = 'Shopping Cart';
     this.cartCount = '9';
   }
 

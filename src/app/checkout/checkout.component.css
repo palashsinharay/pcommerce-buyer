@@ -1,0 +1,28 @@
+h3{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #6c757d;
+    margin-bottom: 19px;
+    padding: 29px 0;
+}
+.checkoutTab{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.checkoutTab li a{
+    border-radius: 0;
+    color: #4fbfa8;
+    border: #4fbfa8 1px solid;
+    padding: 9px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
+.checkoutTab li a.active{
+    background:  #4fbfa8;
+    color: #fff;
+}
+.checkoutTab li a:hover{
+    text-decoration: none;
+}

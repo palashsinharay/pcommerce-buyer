@@ -1,0 +1,22 @@
+<navbar></navbar>
+<div class="pageheading">
+  <div class="container"> 
+    <h2>{{title}}</h2>
+  </div>
+</div>
+<div class="container">
+  <h3>Please follow the steps to complete the checkout process. </h3>
+  <div class="row">
+    <div class="col-md-9">
+      <ul class="checkoutTab">
+        <li><a routerLink="/checkout/address" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Address</a></li>
+        <li><a routerLink="/checkout/payment" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Payment</a></li>
+        <li><a routerLink="/checkout/overview" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Overview</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-3">
+      <order-summary></order-summary>
+    </div>
+  </div>
+</div>

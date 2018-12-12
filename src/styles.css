@@ -25,6 +25,18 @@ ul{
     font-weight: 600;
     text-transform: uppercase;
 }
+.buttonRed{
+	background: rgba(241,108,73, 0.8);
+    border: 1px solid rgba(241,108,73, 0.8);
+    color: #fff;
+    border-radius: 0;
+    text-decoration: none;
+    margin-bottom: 19px;
+    padding: 9px 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 .pageheading{
     padding: 29px 0;
     background: url(assets/images/texture-bw.png) repeat 0 0;
@@ -43,5 +55,30 @@ ul{
     height: 400px;
 }
 .pRelative{position: relative;}
+.cartLinkPanel{
+    text-align: right;
+    padding: 19px;
+    background: #eee;
+    border-top: #ddd 1px solid;
+    margin-bottom: 18px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 18px;
+}
+.cartLinkPanel a{
+    font-size: 14px;
+    padding: 9px;
+    font-weight: 600;
+    color: #fff;
+}
+.simple{
+    background: #555;
+}
+.solid{
+    background: #4fbfa8;
+}
+.simple:hover, .solid:hover, .simple:focus, .solid:focus{color: #fff; text-decoration: none;}
+.simple i, .solid i{font-size: 12px;}
 
   

@@ -30,28 +30,3 @@ h3 span{color: #000; font-weight: 600;}
     grid-template-columns: 40% 14% 14% 14% 18%;
     border-top: #ddd 1px solid;
 }
-.cartLinkPanel{
-    text-align: right;
-    padding: 19px;
-    background: #eee;
-    border-top: #ddd 1px solid;
-    margin-bottom: 18px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    margin-bottom: 18px;
-}
-.cartLinkPanel a{
-    font-size: 14px;
-    padding: 9px;
-    font-weight: 600;
-    color: #fff;
-}
-.simple{
-    background: #555;
-}
-.solid{
-    background: #4fbfa8;
-}
-.simple:hover, .solid:hover, .simple:focus, .solid:focus{color: #fff; text-decoration: none;}
-.simple i, .solid i{font-size: 12px;}
