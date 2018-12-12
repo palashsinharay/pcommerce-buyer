@@ -10,6 +10,10 @@ export class OrderSummaryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.orderTotal = '$446.00';
+    this.shippingCost = '$10.00';
+    this.tax = '$0.00';
+    this.allTotal = '$456.00';
   }
 
 }

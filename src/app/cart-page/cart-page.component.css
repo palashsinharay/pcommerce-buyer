@@ -39,6 +39,7 @@ h3 span{color: #000; font-weight: 600;}
     justify-content: space-between;
     align-items: center;
     display: flex;
+    margin-bottom: 18px;
 }
 .cartLinkPanel a{
     font-size: 14px;
