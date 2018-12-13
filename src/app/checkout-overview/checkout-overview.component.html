@@ -1,3 +1,20 @@
-<p>
-  checkout-overview works!
-</p>
+<ul class="cartTable">
+  <li class="head">
+    <p>Product </p>
+    <p>Quantity </p>
+    <p>Unit price </p>
+    <p>Discount </p>
+    <p>Total </p>
+  </li>
+  <!-- Cart list -->
+  <cartlist-overview></cartlist-overview>
+  <!-- Cart list -->
+  <li class="last">
+    <p>Total </p>
+    <p>$448.00 </p>
+  </li>
+</ul>
+<div class="cartLinkPanel">
+  <a routerLink='/checkout/payment' class="simple"><i class="fa fa-long-arrow-left"></i> Back to Payment</a>
+  <a routerLink='/checkout/overview' class="solid">Place Order <i class="fa fa-long-arrow-right"></i></a>
+</div>

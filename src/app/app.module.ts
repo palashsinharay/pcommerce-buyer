@@ -31,6 +31,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { CheckoutAddressComponent } from './checkout-address/checkout-address.component';
 import { CheckoutPaymentComponent } from './checkout-payment/checkout-payment.component';
 import { CheckoutOverviewComponent } from './checkout-overview/checkout-overview.component';
+import { CartlistOverviewComponent } from './cartlist-overview/cartlist-overview.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { CheckoutOverviewComponent } from './checkout-overview/checkout-overview
     CheckoutComponent,
     CheckoutAddressComponent,
     CheckoutPaymentComponent,
-    CheckoutOverviewComponent
+    CheckoutOverviewComponent,
+    CartlistOverviewComponent
   ],
   imports: [
     HttpModule,

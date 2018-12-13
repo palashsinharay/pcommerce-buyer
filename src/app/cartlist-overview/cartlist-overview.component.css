@@ -1,0 +1,15 @@
+li{
+    display: grid;
+    grid-template-columns: 10% 30% 14% 14% 14% 14% 4%;
+    border-bottom: #ddd 1px solid;
+    padding: 14px 0;
+}
+li p{
+    margin-bottom: 0; 
+    margin-right: 6px; 
+    color: #6c757d;
+    font-size: 14px;
+}
+li img.prod{max-width: 80%; max-height: 40px;}
+li input{width: 60px; padding: 4px 0 4px 9px; border: #ddd 1px solid;}
+li a i{color: rgba(241,108,73,1); font-size: 15px;}
