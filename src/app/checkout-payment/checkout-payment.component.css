@@ -1,0 +1,14 @@
+label span{
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+}
+.form-check-input{margin-left: 0;}
+.form-check{
+    background: #efefef;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 18px;
+}
+.form-check-label{margin-left: 25px;}
