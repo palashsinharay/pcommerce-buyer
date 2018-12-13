@@ -1,6 +1,6 @@
 li{
     display: grid;
-    grid-template-columns: 10% 30% 14% 14% 14% 14% 4%;
+    grid-template-columns: 10% 34% 14% 14% 14% 14%;
     border-bottom: #ddd 1px solid;
     padding: 14px 0;
 }

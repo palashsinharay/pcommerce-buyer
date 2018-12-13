@@ -10,7 +10,6 @@ h3 span{color: #000; font-weight: 600;}
 .cartTable{margin: 0;}
 .cartTable li{
     display: grid;
-    grid-template-columns: 10% 30% 14% 14% 14% 14% 4%;
     border-bottom: #ddd 1px solid;
     padding: 14px 0;
 }
