@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
-
+  title;
   constructor() { }
 
   ngOnInit() {
-    this.title= 'Checkout'
+    this.title = 'Checkout';
   }
 
 }

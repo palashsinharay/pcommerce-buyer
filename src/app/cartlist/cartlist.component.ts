@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cartlist.component.css']
 })
 export class CartlistComponent implements OnInit {
-
+  tableImg;
+  prodDetails;
+  unitPrice;
+  discount;
+  totPrice;
   constructor() { }
 
   ngOnInit() {

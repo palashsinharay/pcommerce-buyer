@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-summary.component.css']
 })
 export class OrderSummaryComponent implements OnInit {
-
+  orderTotal;
+  shippingCost;
+  tax;
+  allTotal;
   constructor() { }
 
   ngOnInit() {
