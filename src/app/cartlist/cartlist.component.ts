@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'cartlist',
   templateUrl: './cartlist.component.html',
   styleUrls: ['./cartlist.component.css']

@@ -6,6 +6,7 @@ import { NgModule, Component, ErrorHandler } from '@angular/core';
 import { RouterModule, ChildrenOutletContexts } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,8 +19,6 @@ import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProdImageGalComponent } from './prod-image-gal/prod-image-gal.component';
 import { AppErrorHandler } from './common/app-error-handler';
-import { StoreModule } from '@ngrx/store';
-import { reducers } from './store/root.reducer';
 import { OtherSellerComponent } from './other-seller/other-seller.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { FeaturedProductComponent } from './featured-product/featured-product.component';
@@ -32,6 +31,7 @@ import { CheckoutAddressComponent } from './checkout-address/checkout-address.co
 import { CheckoutPaymentComponent } from './checkout-payment/checkout-payment.component';
 import { CheckoutOverviewComponent } from './checkout-overview/checkout-overview.component';
 import { CartlistOverviewComponent } from './cartlist-overview/cartlist-overview.component';
+
 
 
 @NgModule({
@@ -62,7 +62,6 @@ import { CartlistOverviewComponent } from './cartlist-overview/cartlist-overview
   imports: [
     HttpModule,
     BrowserModule,
-    StoreModule.forRoot(reducers),
     RouterModule.forRoot([
       {
         path: '',
@@ -124,4 +123,5 @@ import { CartlistOverviewComponent } from './cartlist-overview/cartlist-overview
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }
