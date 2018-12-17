@@ -38,6 +38,10 @@
 .prodImg{
 	height: 200px;
 	overflow: hidden;
+	border: #ddd 1px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
 }
 .prodImg img{
 	width: 100%;
